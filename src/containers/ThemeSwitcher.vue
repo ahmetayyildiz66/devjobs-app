@@ -1,23 +1,23 @@
 <template>
   <div class="flex items-center space-x-4">
     <IconSun />
-    <DjSwitch v-model="switchToggle" />
+    <DjSwitch :model-value="isDark" @update:model-value="toggleDark" :is-checked="isDark" />
     <IconMoon />
   </div>
 </template>
 
 <script lang="ts" setup>
-// ref
-import { ref, watch } from "vue"
+// localStorage
+import { useDark, useToggle } from "@vueuse/core"
 
+// imports
 import DjSwitch from '../components/DjSwitch.vue';
 import IconMoon from '../components/icons/IconMoon.vue';
 import IconSun from '../components/icons/IconSun.vue';
 
 
-const switchToggle = ref(false)
 
-watch(switchToggle, () => {
-  console.log('toggleable: ', switchToggle.value)
-})
+const isDark = useDark()
+const toggleDark = useToggle(isDark)
+
 </script>
