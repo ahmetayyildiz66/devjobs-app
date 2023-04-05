@@ -2,8 +2,6 @@
   <button class="btn" :class="[mode]">
     <slot>Button</slot>
   </button>
-  <span>{{ dark }}</span>
-  <span>{{ primary }}</span>
 </template>
 
 <script lang="ts" setup>
@@ -17,12 +15,12 @@ const props = withDefaults(defineProps<Props>(), {
   dark: false,
 });
 
-const mode = props.primary ? "!bg-red-200 !text-blue-600" : "";
+const mode = props.primary && "!bg-blue-550 dark:!bg-gray-900 dark:hover:!bg-gray-500 !text-white hover:!bg-blue-650";
 </script>
 
 <style scoped>
 
 .btn {
-  @apply px-11 py-3 rounded-md bg-blue-400 text-white;
+  @apply px-11 py-3 rounded-md bg-gray-250  text-blue-550 font-bold hover:bg-blue-350 hover:text-blue-550 transition-colors duration-300;
 }
 </style>
