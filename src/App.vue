@@ -1,13 +1,10 @@
-<script setup lang="ts"></script>
-
 <template>
-  <div class="flex justify-center py-20 w-full">
-    <DjButton>Submit</DjButton>
-  </div>
+  <DjHeader />
+  <!-- <main class="lg:max-w-[1440px] mx-auto"></main> -->
 </template>
 
 <script lang="ts" setup>
-import DjButton from "./components/DjButton.vue";
+import DjHeader from "./layouts/DjHeader.vue"
 </script>
 
 <style>

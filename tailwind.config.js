@@ -3,6 +3,18 @@ module.exports = {
   purge: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   darkMode: 'media', // or 'media' or 'class'
   theme: {
+    container: {
+      screens: {
+        sm: '375px',
+        md: '768px',
+        lg: '1110px'
+      }
+    },
+    screens: {
+      'sm': '375px',
+      'md': '768px',
+      'lg': '1440px'
+    },
     extend: {
       colors: {
         blue: {
