@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="h-6">
     <input type="checkbox" name="themeToggler" id="themeToggler" class="peer hidden" />
     <label
       for="themeToggler"
