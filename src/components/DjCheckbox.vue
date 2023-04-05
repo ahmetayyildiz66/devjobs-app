@@ -15,7 +15,7 @@
     <span
       class="cursor-pointer pointer-events-none inline-block rotate-45 absolute left-[8px] top-[3px] h-[14px] w-[8px] border-b-[2px] border-r-[2px] border-b-white border-r-white invisible peer-checked:visible"
     ></span>
-    <label for="checkbox" class="ml-4 font-bold cursor-pointer">{{ labelText }}</label>
+    <label for="checkbox" class="ml-4 font-bold cursor-pointer dark:text-white">{{ labelText }}</label>
   </div>
 </template>
 

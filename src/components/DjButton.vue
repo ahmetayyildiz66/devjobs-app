@@ -15,7 +15,7 @@ const props = withDefaults(defineProps<Props>(), {
   dark: false,
 });
 
-const mode = props.primary && "!bg-blue-550 dark:!bg-gray-900 dark:hover:!bg-gray-500 !text-white hover:!bg-blue-650";
+const mode = props.primary && "!bg-blue-550 !text-white hover:!bg-blue-650";
 </script>
 
 <style scoped>
