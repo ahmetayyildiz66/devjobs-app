@@ -4,6 +4,7 @@ module.exports = {
   darkMode: 'class', // or 'media' or 'class'
   theme: {
     container: {
+      center: true,
       screens: {
         sm: '327px',
         md: '690px',
@@ -23,7 +24,9 @@ module.exports = {
           '650': "#939BF4"
         },
         gray: {
+          '50': "#F4F6F8",
           '250': '#EEF0FC',
+          '450': '#E6E7E9',
           '550': '#696E76'
         }
       }

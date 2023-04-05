@@ -1,10 +1,12 @@
 <template>
   <DjHeader />
+  <FilterJobs class="container" />
   <!-- <main class="lg:max-w-[1440px] mx-auto"></main> -->
 </template>
 
 <script lang="ts" setup>
 import DjHeader from "./layouts/DjHeader.vue"
+import FilterJobs from "./containers/FilterJobs.vue";
 </script>
 
 <style>
@@ -12,5 +14,6 @@ import DjHeader from "./layouts/DjHeader.vue"
 
 body {
   font-family: "Kumbh Sans", sans-serif;
+  background-color: #F4F6F8;
 }
 </style>
